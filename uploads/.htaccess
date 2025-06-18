@@ -1,0 +1,11 @@
+# Deny direct access to files
+<FilesMatch "(?i)\.(php|php3?|phtml)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Allow image files
+<FilesMatch "(?i)\.(gif|jpe?g|png)$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch> 
